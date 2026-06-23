@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prii Depil</title>
+    <link rel="stylesheet" href="depil.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+        
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="img/assets/Logo.png" alt="logo" class="logo">
+        </a>
+        <button class="hamburguer"><img src="img/assets/Shape.png" alt="hamburguer"></button>
+        <nav class="optionsHeader">
+        <a href="#">Sobre mim</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#espaco">Espaço</a>           
+        <a href="#feedback">Feedbacks</a>           
+        <a href="#localizacao">Localização</a>
+        <a href="https://wa.me/5511962146366">
+            <button class="btn-header">Contate</button>
+        </a>
+        </nav>
+    </header>
+    <section class="sobre">
+        <h2><span class="span1">Olá,</span> me chamo <span class="span2">Priscila Santana</span>, mais conhecida como <em>Prii Depil</em> e atuo na área da beleza <span class="span3">há mais de 15 anos.</span><br><br>Realizo atendimentos com dedicação, cuidado e atenção aos detalhes, sempre buscando valorizar a beleza natural de cada cliente.<br><br>Meu trabalho é baseado em técnicas cuidadosas e um atendimento personalizado, respeitando a individualidade de cada pessoa.</h2>
+        <div class="btnsSobre">
+            <div class="ContainerBtnSobre">
+    <a href="#servicos">
+        <button class="btnSaiba">Saiba Mais</button>
+    </a>
+    <a href="https://wa.me/5511962146366">
+        <button class="btnContatar">Contatar</button>
+    </a>
+    </div>
+    <div class="ContainerIconsSobre">
+    <a href="https://www.instagram.com/prii.depil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/assets/iconinsta.png" alt="iconInsta" class="iconsSobre"></a>
+    <a href="https://wa.me/5511962146366"><img src="img/assets/iconwpp.png" alt="iconWpp" class="iconsSobre"></a>
+    </div>
+</div>
+    <img src="img/assets/sobre.png" alt="sobre" class="imgSobre">
+    <img src="img/assets/imgSobreDois.png" alt="sobreDois" class="imgSobreDois">
+    </section>
+    <section class="beneficios" id="beneficios">
+        <h2>BENEFÍCIOS DO ATENDIMENTO</h2>
+        <div class="imgBenUm">
+            <img src="img/assets/autoestima.png" alt="autoestima">
+            <img src="img/assets/durabilidade.png" alt="durabilidade">
+            <img src="img/assets/conforto.png" alt="conforto">
+            </div>
+            <div class="imgBenDois">
+            <img src="img/assets/praticidade.png" alt="praticidade">
+            <img src="img/assets/ambiente.png" alt="ambiente">
+            <img src="img/assets/acabamento.png" alt="acabamento">
+            </div>
+            <a href="https://wa.me/5511962146366"><button class="btn-beneficios">Quero agendar</button></a>
+    </section>
+    <section class="servicos" id="servicos">
+        <h2>SERVIÇOS DISPONÍVEIS</h2>
+        <div class="ajusteImgServ">
+        <img src="img/assets/cera2.png" alt="cera">
+        <h3>DEPILAÇÃO COM CERA</h3>
+        <img src="img/assets/micro.png" alt="micro">
+        <h3>MICROPIGMENTAÇÃO</h3>
+        <img src="img/assets/design.png" alt="design">
+        <h3>DESIGN DE SOBRANCELHA</h3>
+        <img src="img/assets/brow.png" alt="brow">
+        <h3>BROW LAMINATION</h3>
+        </div>
+    </section>
+    <section class="agendarUm">
+        <h4>Aliando técnica impecável e olhar artístico, ofereço a excelência em Brow Lamination, Design Estratégico, Micropigmentação Labial e Depilação Corporal,garantindo um resultado sofisticado que realça sua beleza natural com a segurança e o cuidado profissional que você merece.<br><br> <strong>Sua melhor versão começa com um clique. Agende seu horário!</strong></h4>
+        <a href="https://wa.me/5511962146366"><button class="btn-agendarUm">Quero agendar</button></a>
+    </section>
+    
+    <section class="tecnicas">
+        <div class="tecnicasContainerUm">
+            <img src="img/assets/Tecnicas.png" alt="Tecnicas">
+            <div class="blurTecnicas"></div>
+            <div class="containerTextBtnTec">
+            <h1 class="textTecnicas">CONHEÇA AS TÉCNICAS ESCOLHIDAS PARA PROPORCIONAR O MELHOR RESULTADO PARA VOCÊ!</h1>
+            <a href="#tecnicasContainerDois"><button class="btnTecnicas">Saiba Mais</button></a>
+            </div>
+        </div>
+
+        <div class="tecnicasContainerDois" id="tecnicasContainerDois">
+
+            <div class="tecnicaCorporal">
+                <div class="imgCorporal">
+                <img src="img/assets/tecnicaDepilacao.png" alt="Depilação Corporal"></img>
+                <h3>Depilação Corporal</h3>
+                </div>
+                <ul>
+                    <li>Método Rollon</li>
+                    <li>Método com cera hidro-solúvel</li>
+                    <li>Depilação com cera quente</li>
+                </ul>
+            </div>
+
+            <div class="microSobrancelha">
+                <div class="imgMicroSobrancelha">
+                <img src="img/assets/tecnicaSobrancelha.png" alt="Micropigmentação de Sobrancelha"></img>
+                <h3>Micropigmentação de Sobrancelha</h3>
+                </div>
+                <ul>
+                    <li>Realista fio a fio</li>
+                    <li>Shadow</li>
+                </ul>
+            </div>
+
+            <div class="microLabial">
+                <div class="imgMicroLabial">
+                <img src="img/assets/tecnicaLabial.png" alt="Micropigmentação Labial"></img>
+                <h3>Micropigmentação Labial</h3>
+                </div>
+                <ul>
+                    <li>Contorno</li>
+                    <li>Estilo Batom</li>
+                    <li>Hydra Gloss Labial</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <div class="tecnicasContainerTres">
+        <p>Aperfeiçoamos nossas técnicas de micropigmentação e depilação combinando estudo e alta tecnologia. O resultado disso? Um procedimento rápido, preciso e sob medida para valorizar o seu visual.</p>
+        </div>
+
+
+    <section class="novidade">
+        <div class="containerNovidadeUm">
+            <div class="novidadeImg">
+            <img src="img/assets/novidadeImg.png" alt="novidadeImg">
+            </div>
+            <div class="novidadeSobrepor">
+            <p class="fraseNew">"Evoluindo sempre para oferecer o melhor atendimento."<br>- Prii Depil</p>
+            </div>
+            <div class="novidadeBtn">
+            <a href="#titleNovidadeDois"><button class="btnNovidade">Conheça a novidade!</button></a>
+            </div>
+        </div>
+
+        <div class="containerNovidadeDois">
+            <div class="titleNovidadeDois" id="titleNovidadeDois">
+            <h2>MÉTODO HYDRA GLOSS LABIAL</h2>
+            </div>
+            <div class="conteudoNovidade">
+            <div class="containerImgNovidadeDois">
+            <img src="img/assets/glossy.png" alt="Método Hydra Gloss Labial">
+            </div>
+            <div class="containerTextoNovidadeDois">
+            <div class="containerTextoNovidade">
+            <p>O Hidra Gloss é uma técnica estética para os lábios que faz uma hidratação profunda, deixando a boca mais lisinha, macia, com brilho natural e aparência mais saudável. Não é preenchimento labial.<br><br>Geralmente o procedimento inclui:<br><br>Esfoliação dos lábios,<br>Aplicação de ativos hidratantes (como vitaminas e ácido hialurônico),<br>Microagulhamento superficial com dermapen em alguns casos,<br>Finalização com efeito “gloss”.<br><br>Os principais benefícios são:<br><br>Diminuir ressecamento e pelinhas,<br>Suavizar linhas finas,<br>Dar aspecto mais volumoso temporariamente,<br>Deixar os lábios mais rosados e viçosos.</p>
+            </div>
+            <div class="containerBtnNovidadeDois">
+            <a href="https://wa.me/5511962146366"><button class="btnNovidadeAgendar">Quero agendar</button></a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+     </section>
+
+<section class="gallery-wrapper" id="espaco">
+    <h2>ESPAÇO ACONCHEGANTE E PENSADO PARA VOCÊ</h2>
+    <div class="gallery">
+        <img src="img/assets/AmbienteUm.jpeg" alt="Gallery 1" class="card"> 
+        <img src="img/assets/AmbienteDois.jpeg" alt="Gallery 2" class="card"> 
+        <img src="img/assets/AmbienteTres.jpeg" alt="Gallery 3" class="card">
+        <img src="img/assets/AmbienteQuatro.jpeg" alt="Gallery 4" class="card"> 
+        <img src="img/assets/AmbienteCinco.jpeg" alt="Gallery 5" class="card"> 
+        <img src="img/assets/AmbienteSeis.jpeg" alt="Gallery 6" class="card">
+        <img src="img/assets/AmbienteSete.jpeg" alt="Gallery 7" class="card">
+        <img src="img/assets/AmbienteOito.jpeg" alt="Gallery 8" class="card">
+    </div>
+</section>
+
+    <section class="feedbacks" id="feedback">
+        <div class="colunaUm">
+        <h2>ACOMPANHE OS FEEDBACKS E DESCUBRA O QUE OS CLIENTES ESTÃO DIZENDO</h2>
+        <p>Eu acolho cada feeback com carinho, transformando cada palavra em evolução e cuidado para ofereceer sempre o meu melhor serviço.</p>
+        <a href="https://wa.me/5511962146366"><button class="btn-feedbacks">Quero agendar</button></a>
+        </div>
+
+<section class="avaliacoes">
+  <div class="trackVertical">
+
+    <div class="item">
+      <div class="linha"></div>
+      <img src="img/assets/joycecanda.png" alt="joycecanda">
+      <div class="texto">
+        <h3>Joyce Canda</h3>
+        <p>Excelente profissional, pontual, simpática e preocupada com seus clientes. Sempre oferecendo tudo do melhor</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="linha"></div>
+      <img src="img/assets/aninhasalero.png" alt="aninhasalero">
+      <div class="texto">
+        <h3>Aninha Salero</h3>
+        <p>Depiladora sensacional! Faço com a Pri há uns 10 anos e não troco por nada!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="linha"></div>
+      <img src="img/assets/gabrieliveloz.png" alt="gabrieliveloz">
+      <div class="texto">
+        <h3>Gabrieli Oliveira Velozo</h3>
+        <p>Uma Profissional maravilhosa. Nota mil. Recomendo de olhos fechados ⭐️⭐️⭐️⭐️⭐️</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="linha"></div>
+      <img src="img/assets/idaianelima.png" alt="idaianelima">
+      <div class="texto">
+        <h3>Idaiane Lima</h3>
+        <p>A Pri é maravilhosa, dedicada, sempre dá um jeitinho de me atender (pois moro longe dela) com a mesma alegria e profissionalismo.</p>
+      </div>
+    </div>
+
+        <div class="item">
+      <div class="linha"></div>
+      <img src="img/assets/joycecanda.png" alt="joycecanda">
+      <div class="texto">
+        <h3>Joyce Canda</h3>
+        <p>Excelente profissional, pontual, simpática e preocupada com seus clientes. Sempre oferecendo tudo do melhor</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+    </section>
+
+    <section class="MapContat" id="localizacao">
+        <h2>LOCALIZAÇÃO & CONTATO</h2>
+        <div class="englobaTudo">
+        <div id="map"></div>
+        <div class="infoLoc">
+        <h3 class="local">R. Clemente Pereira, 388 - Ramal 2 Ipiranga, São Paulo - SP, 04216-060</h3>
+        <div class="contactWpp">
+        <img src="img/assets/iconwppred.png" alt="iconwppred" class="iconsContat">
+        <p>(11) 96214-6366</p>
+        </div>
+        <div class="iconAgenda">
+        <img src="img/assets/iconcalendar.png" alt="iconcalendar" class="iconsContat">
+        <p>Somente com agendamento</p>
+        </div>
+        <p>Que tal tirar um tempinho só pra você? Um momento de cuidado, leveza e autoestima te espera. Aqui, cada detalhe é pensado pra realçar sua beleza e renovar sua energia.<br><br><span class="editAgend">Agende seu horário e venha viver essa experiência — Você merece se sentir ainda mais incrível.</span></p>
+        <a href="https://wa.me/5511962146366"><button class="btnLoc">Quero agendar</button></a>
+        </div>
+        </div>
+    </section>
+
+    <section class="homeOffice">
+        <div class="containerTitle">
+        <h2>Precisa de atendimento à domícilio?<br><span class="spanOfficeh2">Entre em contato para agendar!</span>
+        </h2>
+        </div>
+        <div class="containerConteudoHomeOffice">
+            <div class="containerTextoHome">
+        <p>Na Prii Depil, o seu bem-estar e a sua saúde são tratados como prioridade absoluta.<br><br>Minha missão é levar o padrão de excelência do estúdio diretamente para o conforto e a segurança do seu lar. Mais do que um serviço de estética, o atendimento domiciliar foi desenhado para ser um momento de leveza, autocuidado e renovação para a sua autoestima.<br><br>Segurança e Protocolos Adaptados: Atendimento totalmente preparado para atender às suas necessidades específicas e limitações de saúde, com máxima higiene.<br><br>Conforto Absoluto: Sem trânsito, sem salas de espera. O cuidado acontece no seu ritmo e no seu espaço.<br><br>Resgate da Autoestima: Um momento dedicado exclusivamente a fazer você se sentir bem, radiante e confiante.<br><br>Entre em contato para alinharmos o melhor horário e preparamos um atendimento sob medida para você.</p>
+        </div>
+        <div class="containerAglomeradoHomeOffice">
+            <div class="containerImgHomeOffice">
+        <img src="img/assets/homeOffice.png" alt="homeOffice">
+            </div>
+            <div class="containerBtnHomeOffice"> 
+        <a href="https://wa.me/5511962146366"><button class="btnHomeOffice">Quero agendar</button></a>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="columnFooter">
+        <div class="columnimage">
+        <img src="img/assets/logo.png" alt="logo" class="logoFooter">
+        </div>
+        <div class="footerList">
+            <div class="columnServices">
+            <h3>Serviços</h3>
+            <ul class="servicesList">
+                <li>Depilação com cera</li>
+                <li>Brow Lamination</li>
+                <li>Micropigmentação Labial</li>
+                <li>Design de sobrancelha</li>
+                </ul>
+                </div>
+                <div class="columnEmpresas">
+                <h3>Empresa</h3>
+                <ul class="empresaList">
+                    <li><a href="#">Sobre mim</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#espaco">Espaço</a></li>
+                    <li><a href="#feedback">Avaliações</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                </ul>
+                </div>
+                <div class="columnSociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/prii.depil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/assets/iconinsta.png" alt="iconinsta" class="iconsList"></a>
+                <a href="https://wa.me/5511962146366"><img src="img/assets/iconwpp.png" alt="iconwpp" class="iconsList"></a>
+                </div>              
+                </div>
+        </div>
+        <hr>
+        <div class="phr">
+        <p>© 2011 Prii Depil<br>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<script src="depil.js"></script>
+</body>
+</html>
